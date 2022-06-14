@@ -13,6 +13,11 @@
 		BC5EE8D4285818DB0068C43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5EE8D3285818DB0068C43E /* Assets.xcassets */; };
 		BC5EE8D7285818DB0068C43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5EE8D5285818DB0068C43E /* LaunchScreen.storyboard */; };
 		BC5EE8E3285819C70068C43E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EE8E2285819C70068C43E /* LoginViewController.swift */; };
+		BC5EE8E528581AFB0068C43E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EE8E428581AFB0068C43E /* LoginInteractor.swift */; };
+		BC5EE8E728581B1C0068C43E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EE8E628581B1C0068C43E /* LoginPresenter.swift */; };
+		BC5EE8E928581B400068C43E /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EE8E828581B400068C43E /* LoginUseCase.swift */; };
+		BC5EE8EB28581B580068C43E /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EE8EA28581B580068C43E /* LoginRouter.swift */; };
+		BC5EE8ED28581B790068C43E /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5EE8EC28581B790068C43E /* LoginConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		BC5EE8D6285818DB0068C43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC5EE8D8285818DB0068C43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC5EE8E2285819C70068C43E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC5EE8E428581AFB0068C43E /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		BC5EE8E628581B1C0068C43E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		BC5EE8E828581B400068C43E /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		BC5EE8EA28581B580068C43E /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		BC5EE8EC28581B790068C43E /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				BC5EE8DE285818EA0068C43E /* AppDelegate */,
-				BC5EE8E02858194F0068C43E /* Scenes */,
 				BC5EE8DF285819000068C43E /* Resource */,
+				BC5EE8E02858194F0068C43E /* Scenes */,
 			);
 			path = LoginVIP;
 			sourceTree = "<group>";
@@ -76,8 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				BC5EE8D3285818DB0068C43E /* Assets.xcassets */,
-				BC5EE8D5285818DB0068C43E /* LaunchScreen.storyboard */,
 				BC5EE8D8285818DB0068C43E /* Info.plist */,
+				BC5EE8D5285818DB0068C43E /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -94,6 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				BC5EE8D0285818DA0068C43E /* Login.storyboard */,
+				BC5EE8EC28581B790068C43E /* LoginConfigurator.swift */,
+				BC5EE8E428581AFB0068C43E /* LoginInteractor.swift */,
+				BC5EE8E628581B1C0068C43E /* LoginPresenter.swift */,
+				BC5EE8EA28581B580068C43E /* LoginRouter.swift */,
+				BC5EE8E828581B400068C43E /* LoginUseCase.swift */,
 				BC5EE8E2285819C70068C43E /* LoginViewController.swift */,
 			);
 			path = Login;
@@ -170,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5EE8E528581AFB0068C43E /* LoginInteractor.swift in Sources */,
 				BC5EE8E3285819C70068C43E /* LoginViewController.swift in Sources */,
 				BC5EE8CB285818DA0068C43E /* AppDelegate.swift in Sources */,
 				BC5EE8CD285818DA0068C43E /* SceneDelegate.swift in Sources */,
+				BC5EE8E728581B1C0068C43E /* LoginPresenter.swift in Sources */,
+				BC5EE8EB28581B580068C43E /* LoginRouter.swift in Sources */,
+				BC5EE8ED28581B790068C43E /* LoginConfigurator.swift in Sources */,
+				BC5EE8E928581B400068C43E /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
