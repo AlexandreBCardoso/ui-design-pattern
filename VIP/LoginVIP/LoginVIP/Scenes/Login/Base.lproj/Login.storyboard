@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="hsH-1b-9B2">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="ZEQ-KZ-GWR" customClass="LoginViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4CN-aT-zDO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Y2-Aa-8TC">
+                                <rect key="frame" x="50" y="184" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dc-Yc-Enu">
+                                <rect key="frame" x="50" y="144" width="314" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gTQ-BX-0w1">
+                                <rect key="frame" x="50" y="298" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRc-DU-CqT">
+                                <rect key="frame" x="50" y="258" width="314" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJs-RU-GSp">
+                                <rect key="frame" x="100" y="432" width="214" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="gwX-W4-2GI"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="filled" title="Continuar"/>
+                                <connections>
+                                    <action selector="tappedContinueButton:" destination="ZEQ-KZ-GWR" eventType="touchUpInside" id="Bmt-eR-uSD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7iH-Nd-SQb"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Y2-Aa-8TC" firstAttribute="leading" secondItem="9dc-Yc-Enu" secondAttribute="leading" id="1Fe-vD-cZH"/>
+                            <constraint firstItem="gTQ-BX-0w1" firstAttribute="leading" secondItem="sRc-DU-CqT" secondAttribute="leading" id="6tj-xj-zrM"/>
+                            <constraint firstItem="gTQ-BX-0w1" firstAttribute="top" secondItem="sRc-DU-CqT" secondAttribute="bottom" constant="10" id="8G3-7V-ReH"/>
+                            <constraint firstItem="UJs-RU-GSp" firstAttribute="top" secondItem="gTQ-BX-0w1" secondAttribute="bottom" constant="100" id="CSv-nP-OQN"/>
+                            <constraint firstItem="sRc-DU-CqT" firstAttribute="trailing" secondItem="2Y2-Aa-8TC" secondAttribute="trailing" id="LK2-oh-1mz"/>
+                            <constraint firstItem="9dc-Yc-Enu" firstAttribute="leading" secondItem="7iH-Nd-SQb" secondAttribute="leading" constant="50" id="S0I-fi-kdP"/>
+                            <constraint firstItem="7iH-Nd-SQb" firstAttribute="trailing" secondItem="UJs-RU-GSp" secondAttribute="trailing" constant="100" id="aEu-Sq-LEO"/>
+                            <constraint firstItem="sRc-DU-CqT" firstAttribute="top" secondItem="2Y2-Aa-8TC" secondAttribute="bottom" constant="40" id="dJp-g2-hbL"/>
+                            <constraint firstItem="sRc-DU-CqT" firstAttribute="leading" secondItem="2Y2-Aa-8TC" secondAttribute="leading" id="gOc-rz-CpI"/>
+                            <constraint firstItem="UJs-RU-GSp" firstAttribute="leading" secondItem="7iH-Nd-SQb" secondAttribute="leading" constant="100" id="gek-qa-CVq"/>
+                            <constraint firstItem="2Y2-Aa-8TC" firstAttribute="trailing" secondItem="9dc-Yc-Enu" secondAttribute="trailing" id="jDK-wL-MKt"/>
+                            <constraint firstItem="gTQ-BX-0w1" firstAttribute="trailing" secondItem="sRc-DU-CqT" secondAttribute="trailing" id="n2c-nh-oUV"/>
+                            <constraint firstItem="9dc-Yc-Enu" firstAttribute="top" secondItem="7iH-Nd-SQb" secondAttribute="top" constant="100" id="nYe-OS-K9j"/>
+                            <constraint firstItem="2Y2-Aa-8TC" firstAttribute="top" secondItem="9dc-Yc-Enu" secondAttribute="bottom" constant="10" id="ykN-xF-8Y2"/>
+                            <constraint firstItem="7iH-Nd-SQb" firstAttribute="trailing" secondItem="9dc-Yc-Enu" secondAttribute="trailing" constant="50" id="zkV-sC-h7f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="gTQ-BX-0w1" id="krn-dF-ufd"/>
+                        <outlet property="nameTextField" destination="2Y2-Aa-8TC" id="J3T-CR-Rfw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qp3-Hp-fgN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="38"/>
+        </scene>
+    </scenes>
+</document>
